@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>리터럴 연습</h1>
+<ul>
+  <li><span th:text="'Hwang' + ' JeYeon' "></span></li>
+  <li><span th:text="HwangJeYeon"></span></li>
+  <li><span th:text="'Name = ' + ${data}"></span></li>
+  <li><span th:text="|Name = ${data}|"></span></li>
+</ul>
+
+</body>
+</html>

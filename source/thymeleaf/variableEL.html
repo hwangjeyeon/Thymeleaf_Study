@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>SpringEL 표현식</h1>
+  <ul>일반
+    <li><span th:text="${user.username}"></span></li>
+    <li><span th:text="${user['username']}"></span></li>
+    <li><span th:text="${user.getUsername()}"></span></li>
+  </ul>
+  <ul>List
+    <li><span th:text="${ALLs[0].username}"></span></li>
+    <li><span th:text="${ALLs[0]['username']}"></span></li>
+    <li><span th:text="${ALLs[0].getUsername()}"></span></li>
+  </ul>
+  <ul>Map
+    <li><span th:text="${ALL['user1'].username}"></span></li>
+    <li><span th:text="${ALL['user1']['username']}"></span></li>
+    <li><span th:text="${ALL['user1'].getUsername()}"></span></li>
+  </ul>
+</body>
+</html>

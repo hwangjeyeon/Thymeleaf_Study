@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<h1>조건문</h1>
+
+<tr th:each="user : ${users}">
+  <td th:text="${user.username}"></td>
+  <td th:if="${user.age >= 20}"></td>
+  <td th:unless="${user.age >= 20}"></td>
+  <td th:switch="${user.age}">
+    <span th:case="17">17살</span>
+    <span th:case="*">기본값</span>
+  </td>
+</tr>
+
+
+
+
+</body>
+</html>

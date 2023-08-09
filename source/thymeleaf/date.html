@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>날짜 및 시간 표현</h1>
+  <ul>
+    <li>기본값 = <span th:text="${DateTime}"></span></li>
+    <li>형식 = <span th:text="${#temporals.format(DateTime, 'yyyy-MM-dd HH:mm:ss')}"></span></li>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> insert </h1>
+<div th:insert="~{fragment/fragmentsSource :: copy}"></div>
+
+<h1> replace </h1>
+<div th:replace="~{fragment/fragmentsSource :: copy}"></div>
+
+<h1> replace </h1>
+<div th:insert="fragment/fragmentsSource :: copy"></div>
+
+<h1>parameter</h1>
+<div th:replace="~{fragment/fragmentsSource :: copyParam ('황', '양')}"></div>
+
+
+
+</body>
+</html>

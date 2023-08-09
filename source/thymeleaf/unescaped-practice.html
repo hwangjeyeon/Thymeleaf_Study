@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>th:text와 th:utext의 차이</h1>
+  <ul>
+    <li><span th:text="${data}"></span></li>
+    <li><span th:utext="${data}"></span></li>
+  </ul>
+  <ul>
+    <li><span th:inline="none"></span>[[${data}]]</li>
+    <li><span th:inline="none"></span>[(${data})]</li>
+  </ul>
+</body>
+</html>
